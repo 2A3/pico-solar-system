@@ -4,6 +4,15 @@ A miniature device depicting the relative position of the planets in Solar Syste
 
 ![pico](docs/pico.jpeg)
 
+### UPDATED VERSION May 4, 2026 GEK
+
+Added features:
+ Read WIFI, if NTP available use it to set DS3231 if also present.  Fallback to DS3231 if no WIFI.
+ Timezone is set via a menu, and automatically adjusts for daylight savings time.
+ Menu is briefly displayed at startup.
+ Flash LED to let you know if NTP can be set via Wifi
+ Display a small "W" or "R" on top right to indicate source of time.
+ 
 ### Hardware
 * Raspberry Pi Pico and time source
   * Pico + Precision RTC Module (DS3231)
